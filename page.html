@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo">Arjun <span>Sekhar</span></a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h2>Hi, It's <span>Arjun</span></h2>
+            <h3>I am a <span>Python Developer</span></h3>
+            <p>Over the years, I've honed my skills in both frontend and backend development, and I'm currently working on various projects. One of my recent projects involves fetching movie data from an API and displaying it using React. I also focus on creating aesthetically pleasing and functional web pages, with elements like background images, cards, and tables.</p>
+
+            <div class="social-icons">
+                <a href="#"><i class="bx bxl-github"></i></a>
+                <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+                <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+        <div class="home-image">
+            <img src="arjun.jpg" alt="Arjun">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="arjun.jpg" alt="Arjun">
+        </div>
+        <div class="about-content">
+            <h2>About <span>Me</span></h2>
+            <p>I'm Arjunsekhar R, a passionate coder and tech enthusiast from Alappuzha, Kerala. Currently pursuing my undergraduate degree, I'm focused on building my skills as a full-stack developer, specializing in Python and React. I love solving complex problems, whether it's coding, gaming, or exploring new technologies. My dream is to work with top tech companies like BMW, Benz, and Google, and I'm committed to growing through hard work and dedication. When I'm not coding, you can find me watching anime or playing video games. Let's create something awesome together!</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Services</h2>
+        <div class="services-container">
+            <div class="services-box">
+                <div class="services-info">
+                    <i class="bx bxs-devices"></i>
+                    <h4>Web Development</h4>
+                    <p>As a full-stack web developer, I specialize in creating dynamic, user-friendly web applications with a focus on both frontend and backend development. I have hands-on experience with technologies like Python, Django, React, and RESTful APIs. My projects include building a Netflix clone.</p>
+                </div>
+            </div>
+            <div class="services-box">
+                <div class="services-info">
+                    <i class="bx bx-code"></i>
+                    <h4>Frontend Development</h4>
+                    <p>With a strong focus on React, I build responsive, fast, and intuitive frontend applications. I strive to enhance user experience by combining clean code with modern design principles. From developing a Netflix clone to an OTT platform, I've worked on projects that showcase my skills in HTML, CSS, JavaScript, and React.</p>
+                </div>
+            </div>
+            <div class="services-box">
+                <div class="services-info">
+                    <i class="bx bx-code-curly"></i>
+                    <h4>Backend Development</h4>
+                    <p>With a strong focus on React, I build responsive, fast, and intuitive frontend applications. I strive to enhance user experience by combining clean code with modern design principles. From developing a Netflix clone to an OTT platform, I've worked on projects that showcase my skills in HTML, CSS, JavaScript, and React.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="tel" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><i class="bx bxl-github"></i></a>
+            <a href="#"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+            <a href="#"><i class="bx bxl-facebook"></i></a>
+        </div>
+
+        <ul class="list">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <p class="copyright">© Arjun Sekhar | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const menuIcon = document.querySelector('#menu-icon');
+        const navbar = document.querySelector('.navbar');
+
+        menuIcon.onclick = () => {
+        menuIcon.classList.toggle('bx-x');
+        navbar.classList.toggle('active');
+        };
+    </script>
+</body>
+</html>
